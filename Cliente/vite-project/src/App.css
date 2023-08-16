@@ -1,0 +1,70 @@
+.task-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+input[name="titulo"]{
+  border-radius: 25px 0 0 25px;
+  padding: .5rem;
+}
+#agregarTarea{
+  padding: .5rem;
+  border-radius: 0 25px 25px 0;
+  background-color: rgb(92, 208, 111);
+  border: solid 2px rgb(30, 129, 47);
+}
+#agregarTarea:hover{
+  padding: .5rem;
+  background-color: rgb(30, 129, 47);
+  border: solid 2px rgb(17, 85, 29);
+  color: aliceblue;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 2px 1rem;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  background-color: rgb(211, 220, 236);
+}
+.task-list > li > button#cambiarEstado {
+  background-color: rgb(145, 200, 202);
+  border: solid 2px rgb(19, 88, 90);
+}
+.task-list > li > button#eliminar {
+  background-color: rgb(240, 87, 87);
+  border: solid 2px rgb(90, 19, 19);
+}
+.completada {
+  /* text-decoration: line-through; */
+  background-color: rgb(111, 199, 114);
+  padding: .5rem;
+  border-radius:25px;
+}
+.pendiente{
+  background-color: rgb(213, 205, 47);
+  padding: .5rem;
+  border-radius:25px;
+}
+
+button {
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
